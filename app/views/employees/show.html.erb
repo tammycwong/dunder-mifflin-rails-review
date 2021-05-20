@@ -1,0 +1,9 @@
+<h3>Employee Info</h3>
+
+<h4> name: <%= @employee.full_name %> </h4>
+<h4> alias: <%= @employee.alias %> </h4>
+<h4> title: <%= @employee.title %> </h4>
+<h4> office: <%= @employee.office %> </h4>
+<img src= <%= @employee.img_url %> alt="employee image"/>
+
+<button><%= link_to "Edit Employee", edit_employee_path(@employee) %></button>

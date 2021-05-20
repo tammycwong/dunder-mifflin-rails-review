@@ -1,0 +1,7 @@
+<h2> Show All Dogs</h2>
+
+<ul>
+<% @dogs.each do |dog| %>
+    <li><%= link_to "Dog Name: #{dog.name}", dog_path(dog) %></li>
+<% end %>
+</ul>
